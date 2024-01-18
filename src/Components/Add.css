@@ -1,0 +1,8 @@
+section form{
+    width: 40%;
+}
+@media only screen and (max-width: 640px) {
+    section.add-task form {
+        width: 95%;
+    }
+}
