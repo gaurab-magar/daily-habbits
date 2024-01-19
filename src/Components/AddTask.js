@@ -35,7 +35,7 @@ export const AddTask = ({taskList,setTaskList,task,setTask}) => {
         <div className='d-flex justify-content-center'>
             <form onSubmit={ handleSubmit } className='d-flex  gap-2'>
                 <input type="text" name='task' value={task.name || ''} placeholder='Add Task' className='form-control' onChange={e=> setTask({...task, name: e.target.value})}/>
-                <button className='btn btn-primary px-4'>Add</button>
+                <button className='btn btn-primary px-4'>{task.id?"Update":"Add"}</button>
             </form>
         </div>
     </section>
