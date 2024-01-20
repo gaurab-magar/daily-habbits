@@ -20,10 +20,10 @@ export const Header = () => {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
-                            <li className="nav-item"><a href='/li' onClick={() => setTheme("light")} className={`nav-link fw-bold ${theme === 'light' ? 'active' : 'light'}`}>li-mode</a></li>
-                            <li className="nav-item"><a href='/da' onClick={() => setTheme("dark")} className={`nav-link fw-bold ${theme === 'dark' ? 'active' : 'dark'}`}>da-mode</a></li>
-                            <li className="nav-item"><a href="/about" onClick={() => setTheme("gone")} className={`nav-link fw-bold ${theme === 'gone' ? 'active' : 'gone'}`}>theme1</a></li>
-                            <li className='nav-item'><a href="/contact" onClick={() => setTheme("gtwo")} className={`nav-link fw-bold ${theme === 'gtwo' ? 'active' : 'gtwo'}`}>theme2</a></li>
+                            <li className="nav-item"><a href='/li' onClick={(e) => { e.preventDefault(); setTheme("light"); }} className={`nav-link fw-bold ${theme === 'light' ? 'active' : 'light'}`}>li-mode</a></li>
+                            <li className="nav-item"><a href='/da' onClick={(e) => {e.preventDefault(); setTheme("dark"); }} className={`nav-link fw-bold ${theme === 'dark' ? 'active' : 'dark'}`}>da-mode</a></li>
+                            <li className="nav-item"><a href="/about" onClick={(e) => {e.preventDefault();setTheme("gone"); }} className={`nav-link fw-bold ${theme === 'gone' ? 'active' : 'gone'}`}>theme1</a></li>
+                            <li className='nav-item'><a href="/contact" onClick={(e) =>{e.preventDefault(); setTheme("gtwo"); }} className={`nav-link fw-bold ${theme === 'gtwo' ? 'active' : 'gtwo'}`}>theme2</a></li>
                         </div>
                     </div>
                 </div>
