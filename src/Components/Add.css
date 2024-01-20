@@ -1,6 +1,10 @@
 section form{
     width: 40%;
 }
+::placeholder{
+    /* color: whitesmoke !important; */
+    padding-left: 0.7rem;
+}
 @media only screen and (max-width: 640px) {
     section.add-task form {
         width: 95%;

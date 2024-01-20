@@ -1,1 +1,19 @@
-
+.light{
+    background-color: hsl(176, 72%, 74%);
+    transition: all 2s ease-in-out;
+}
+.dark{
+    background-color: #15202B;
+    transition: all 2s ease-in-out;
+}
+.gone{
+    background: linear-gradient(90deg, hsl(191, 75%, 60%) 0%, hsl(248, 87%, 36%) 100%);
+    background-blend-mode: overlay,overlay,normal;
+    transition: all 2s ease-in-out;
+}
+.gtwo{
+    background: linear-gradient(235deg, #ffffff 0%, #000f25 100%),
+                linear-gradient(90deg, rgb(176, 76, 230) 0%, rgb(235, 144, 47) 100%);
+    background-blend-mode: overlay,overlay,normal;
+    transition: all 2s ease-in-out;
+}

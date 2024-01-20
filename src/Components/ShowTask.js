@@ -11,7 +11,7 @@ export const ShowTask = ({taskList,setTaskList,task,setTask}) => {
   }
   return (
     <section className='show-task '>
-      <div className='container bg-light rounded-4 p-5'>
+      <div className='container transparent-bg rounded-4 p-5'>
         <div className='row'>
           <div className='d-flex justify-content-between align-items-center'>
             <h3>TODO :
